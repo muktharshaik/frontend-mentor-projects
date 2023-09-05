@@ -8,7 +8,7 @@ export default async function Index() {
    */
   return (
     <div className={styles.page}>
-      <h1>Homepage</h1>
+      <h1>To check the web page go to /projects/{`< Project name >`}</h1>
     </div>
   );
 }
