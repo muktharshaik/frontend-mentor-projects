@@ -7,9 +7,9 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
-  .imageSection,
-  .contentSection {
-    border: 1px solid black;
-    width: 45%;
-  }
 }
+.formContainer .imageSection,
+.formContainer .contentSection {
+  border: 1px solid black;
+  width: 45%;
+}/*# sourceMappingURL=index.css.map */
