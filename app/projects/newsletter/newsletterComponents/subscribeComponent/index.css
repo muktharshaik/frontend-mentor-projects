@@ -12,4 +12,9 @@
 .formContainer .contentSection {
   border: 1px solid black;
   width: 45%;
+}
+.formContainer .imageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
