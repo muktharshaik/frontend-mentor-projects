@@ -7,12 +7,12 @@ function SubscribeForm() {
     <div className="formContainer">
       <div className="contentSection"></div>
       <div className="imageSection">
-        <Image
+        {/* <Image
           src="/images/newsLetter/illustration-sign-up-desktop.svg"
           alt="Subscribe"
           fill
-          style={{ objectFit: 'scale-down', objectPosition: 'center' }}
-        />
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
+        /> */}
       </div>
     </div>
   );
