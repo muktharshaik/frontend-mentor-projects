@@ -12,6 +12,7 @@
     "@nx/next": "16.7.4",
     "envalid": "^7.3.1",
     "next": "13.4.1",
+    "plaiceholder": "^3.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0",

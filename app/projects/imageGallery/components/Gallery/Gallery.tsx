@@ -1,7 +1,9 @@
 import styles from './Gallery.module.scss';
 import type { ImagesResults } from '../../../../models/ImageSchema';
 import fetchImagesData from '../../../../lib/fetchImageData';
+import blurredImageData from 'app/lib/placeHolderForImages';
 import env from '../../../../lib/env';
+import ImageContainer from '../ImageContainer/ImageContainer';
 
 /* eslint-disable-next-line */
 export interface GalleryProps {}
@@ -15,14 +17,12 @@ export async function Gallery(props: GalleryProps) {
     return <h1>No Images are found!</h1>;
   }
 
+  const photosWithBlur = await blurredImageData(imagesData);
+
   return (
     <div className={styles['container']}>
-      {imagesData.photos.map((image) => {
-        return (
-          <div key={image.id} className={styles['image-container']}>
-            <p>{image.src.large}</p>
-          </div>
-        );
+      {photosWithBlur.map((image) => {
+        return <ImageContainer key={image.id} image={image} />;
       })}
     </div>
   );
