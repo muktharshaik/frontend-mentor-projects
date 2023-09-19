@@ -8,9 +8,10 @@
 
 .container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
+  gap: 30px;
+  margin: 50px auto;
   max-width: 1200px;
   width: 100%;
 }
