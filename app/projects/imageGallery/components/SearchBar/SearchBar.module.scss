@@ -1,0 +1,29 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.searchContainer {
+  height: 50px;
+  width: 20%;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      height: 40px;
+      width: 80%;
+      margin-top: 5px;
+      padding-left: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+}

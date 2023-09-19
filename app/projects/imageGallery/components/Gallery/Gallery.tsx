@@ -6,12 +6,15 @@ import env from '../../../../lib/env';
 import ImageContainer from '../ImageContainer/ImageContainer';
 
 /* eslint-disable-next-line */
-export interface GalleryProps {}
+export interface GalleryProps {
+  topic?: string | undefined;
+}
 
-export async function Gallery(props: GalleryProps) {
-  const imagesData: ImagesResults | undefined = await fetchImagesData(
-    `${env.PEXELS_API_URL}/curated`
-  );
+export async function Gallery({ topic }: GalleryProps) {
+  const url: string = !topic
+    ? `${env.PEXELS_API_URL}/curated`
+    : `${env.PEXELS_API_URL}/search?query=${topic}`;
+  const imagesData: ImagesResults | undefined = await fetchImagesData(url);
 
   if (!imagesData) {
     return <h1>No Images are found!</h1>;
