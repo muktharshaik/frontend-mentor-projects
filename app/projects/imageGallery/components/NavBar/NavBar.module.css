@@ -1,0 +1,28 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.navContainer {
+  color: white;
+  position: sticky;
+  top: 0;
+  background-color: #303546;
+  z-index: 10;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.wraper {
+  display: flex;
+  width: 72rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.wraper h1 {
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+}/*# sourceMappingURL=NavBar.module.css.map */
