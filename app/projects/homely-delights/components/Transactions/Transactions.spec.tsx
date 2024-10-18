@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import ImageContainer from './ImageContainer';
+import Transactions from './Transactions';
 
-describe('ImageContainer', () => {
+describe('Transactions', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<ImageContainer />);
+    const { baseElement } = render(<Transactions />);
     expect(baseElement).toBeTruthy();
   });
 });

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Gallery from '../../components/Gallery/Gallery';
+import Gallery from '../../components/Home/Home';
 
 type Props = {
   params: {
