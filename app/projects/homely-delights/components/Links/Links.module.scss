@@ -1,0 +1,17 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.image-container {
+  width: 550px;
+  height: 650px;
+  overflow-y: scroll;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid black;
+}

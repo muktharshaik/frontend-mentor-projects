@@ -8,6 +8,7 @@ export interface TransactionsProps {}
 export function Transactions({}: TransactionsProps) {
   return (
     <div className={styles['image-container']}>
+      <h1>Hello from transactions</h1>
     </div>
   );
 }
